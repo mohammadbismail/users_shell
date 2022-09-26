@@ -1,0 +1,30 @@
+Query)Create 3 new users
+User.objects.create(first_name="hasan",last_name="sadaqa",email_address="hasan@gmail.com",age=15)
+User.objects.create(first_name="mohammad",last_name="ismail",email_address="ismail@gmail.com",age=15)
+User.objects.create(first_name="saad",last_name="saad",email_address="ismail@gmail.com",age=15)
+
+Query)Retrive all the users
+User.objects.all()
+
+Query)Retrive the last user
+User.objects.last()
+
+Query)Retrive the first user
+User.objects.first()
+
+Query) Change the user with id=3 so their last name is Pancakes.
+c=User.objects.get(id=3)
+c.last_name="Pankcakes"
+c.save()
+
+Query) Change the user with id=3 so their last name is Pancakes.
+c=User.objects.get(id=3)
+c.last_name="Pankcakes"
+c.save()
+
+Query) Delete the user with id=2 from the database
+c = ClassName.objects.get(id=2)
+c.delete() 
+
+Query) Get all the users, sorted by their first name
+User.objects.all().order_by("first_name")
